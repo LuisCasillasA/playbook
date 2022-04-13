@@ -31,3 +31,16 @@ console.log(`Gold Properties
 Gold name: ${gold.name}
 Gold symbol: ${gold.symbol}
 Gold atomic radio: ${gold.radio.atomic}`)
+
+//Create Object with methods
+const helium = {
+    name: "Helios",
+    number: 2,
+    symbol: "He",
+    sayHello: function(){
+        console.log('Hello World (Helium voice)')
+    }
+}
+console.log("This is an object with methods")
+console.log(helium)
+helium.sayHello()
