@@ -28,17 +28,17 @@ console.log(numbersSquare)
 
 // Ejemplo 5: Uso de Map para convertir todos los nombres de una lista a minúsculas
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
-const namesToUpperCase = names.map((name) => name.toUpperCase())
+const namesToLowerCase = names.map((name) => name.toLowerCase())
 
 console.log("Ejemplo 5: Uso de Map para convertir todos los nombres de una lista a minúsculas")
-console.log(namesToUpperCase)
+console.log(namesToLowerCase)
 
-// Ejemplo 6: Uso de map para convertir todos los nombres de una lista a mayúsculas
+// Ejemplo 6: Uso de map para convertir las tres primeras letras de todos los nombres de una lista a mayúsculas
 const countries6 = ['Finland', 'Denmark', 'Sweden', 'Norway', 'Iceland']
 const countriesFirstThreeLetters = countries6.map((country) =>
   country.toUpperCase().slice(0, 3) // el método slice obtiene solo la longitud marcada del string
 )
-console.log("Ejemplo 6: Uso de map para convertir todos los nombres de una lista a mayúsculas")
+console.log("Ejemplo 6: Uso de map para convertir las tres primeras letras de todos los nombres de una lista a mayúsculas")
 console.log(countriesFirstThreeLetters)
 
 // Ejemplo 7: Uso de filter para filtrar una lista de elementos
@@ -66,7 +66,7 @@ const scoresGreaterEighty = scores.filter((score) => score.score > 80)
 console.log("Ejemplo 8: Filtrando elementos por score")
 console.log(scoresGreaterEighty)
 
-// Ejemplo 9: Uso del reduce
+// Ejemplo 9: Tiene una función reductora en los elementos de un arreglo hasta llegar a un elemento final
 const numbers9 = [1, 2, 3, 4, 5]
 const result_of_reduce = numbers9.reduce((acc, element) => acc + element, 0)
 console.log("Ejemplo 9: Uso de reduce para calcular la suma de los elementos de una lista")
