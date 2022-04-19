@@ -39,3 +39,24 @@ const issue = {
 
 console.log('\nTitle and Author: ' + issue.getTitleAndAuthor())
 console.log('General information: ' + issue.getGeneralInfo())
+
+const pullRequest = {
+    title: "Change some files",
+    author: "@LuisCasillasA",
+    branchName: "main",
+    dateCreated: new Date(2022, 04, 15),
+    status: "Approved",
+    repositoryNameAssociated: "my repo",
+    getStatus: function(){
+        return this.status
+    },
+    getTitleAndAuthor: function(){
+        return this.title + ' by ' + this.author
+    }
+}
+
+console.log('\nPull Request')
+console.log('Status: ' + pullRequest.getStatus())
+console.log('Title and author: ' + pullRequest.getTitleAndAuthor())
+
+
