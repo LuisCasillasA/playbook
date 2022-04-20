@@ -13,4 +13,19 @@ const user ={
     }
 }
 
+console.log('User Information')
 console.log(user.getGeneralInfo())
+
+const trendingTopic = {
+    number: 1,
+    topic: 'Movies',
+    tag: 'Spiderman',
+    tweets: 12000,
+    descripcion: 'Superman',
+    getGeneralInfo: function(){
+        return `${this.number}. ${this.topic} - Trending\n${this.tag}\n${this.descripcion}\n${this.tweets} Tweets`
+    }
+}
+
+console.log('\nTrending Topic')
+console.log(trendingTopic.getGeneralInfo())
