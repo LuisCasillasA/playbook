@@ -29,3 +29,16 @@ const trendingTopic = {
 
 console.log('\nTrending Topic')
 console.log(trendingTopic.getGeneralInfo())
+
+const hashtag = {
+    user: user,
+    tag: 'hashtag',
+    datePublished: new Date(),
+    retweets: 1500,
+    description: 'Esto es una publicacion con hashtag',
+    getGeneralInfo: function(){
+        return `@${this.user.username}\n${this.description} #${this.tag}\n${this.datePublished.toDateString()}`
+    }
+}
+console.log('\nHashtag')
+console.log(hashtag.getGeneralInfo())
