@@ -1,4 +1,3 @@
-const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
 const user ={
     name: 'Luis',
     lastName: 'Casiilas',
