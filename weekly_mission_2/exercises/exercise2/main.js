@@ -59,13 +59,19 @@ const explorers = [
     }
 ]
 
+//print name
 explorers.forEach(n => {
     console.log(n.name)    
 });
 
+//print stack
 explorers.forEach(explorer => {
     console.log(explorer.name)
     explorer.stack.forEach(stack => {
         console.log(stack)
     });
 });
+
+//create list stacks
+const stacks = explorers.map((explorer) => {return explorer.stack} )
+console.log(stacks)
