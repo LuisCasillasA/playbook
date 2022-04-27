@@ -84,3 +84,7 @@ console.log(explorerJS)
 //Look for the first explorer that is from CDMX
 const firstExplorerCDMX = explorers.find((explorer) => explorer.city == 'CDMX')
 console.log(`Primer explorer de la CDMX: ${firstExplorerCDMX.name}`)
+
+//Sum all excercises completed
+const sumExcercises = explorers.reduce((sum, explorer) => sum + explorer.exercises_completed, 0)
+console.log(`The sum is: ${sumExcercises}`)
