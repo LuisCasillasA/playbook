@@ -63,3 +63,9 @@ explorers.forEach(n => {
     console.log(n.name)    
 });
 
+explorers.forEach(explorer => {
+    console.log(explorer.name)
+    explorer.stack.forEach(stack => {
+        console.log(stack)
+    });
+});
