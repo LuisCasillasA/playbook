@@ -80,3 +80,7 @@ console.log(stacks)
 const explorerJS = explorers.filter((jsStack) => jsStack.stack.includes('js'))
 
 console.log(explorerJS)
+
+//Look for the first explorer that is from CDMX
+const firstExplorerCDMX = explorers.find((explorer) => explorer.city == 'CDMX')
+console.log(`Primer explorer de la CDMX: ${firstExplorerCDMX.name}`)
