@@ -75,3 +75,8 @@ explorers.forEach(explorer => {
 //create list stacks
 const stacks = explorers.map((explorer) => {return explorer.stack} )
 console.log(stacks)
+
+//Explorer list with stack "JS"
+const explorerJS = explorers.filter((jsStack) => jsStack.stack.includes('js'))
+
+console.log(explorerJS)
