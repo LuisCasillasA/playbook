@@ -35,3 +35,17 @@ console.log('Passanger\n')
 console.log(user.getGeneralInfo())
 console.log('\nDriver')
 console.log(userDrive.getGeneralInfo() + userDrive.car.getCarInfo())
+
+const travel ={
+    destination: 'Zocalo Capitalino',
+    origin:  'Calle San Luis #25 Jerez, Zacatecas',
+    price: 4680,
+    passanger: user,
+    driver: userDrive,
+    getTravelInfo: function(){
+        return `${this.destination} to ${this.origin}\n$${this.price}\nDriver\n${this.driver.getGeneralInfo()}\nCar${this.driver.car.getCarInfo()}\nPassanger\n${this.passanger.getGeneralInfo()}`
+    }
+}
+
+console.log('\nTravel\n')
+console.log(travel.getTravelInfo())
