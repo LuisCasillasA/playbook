@@ -88,3 +88,10 @@ console.log(`Primer explorer de la CDMX: ${firstExplorerCDMX.name}`)
 //Sum all excercises completed
 const sumExcercises = explorers.reduce((sum, explorer) => sum + explorer.exercises_completed, 0)
 console.log(`The sum is: ${sumExcercises}`)
+
+//Use validator SOME
+const frontFinished = explorers.some((num) => num.missions.frontend.exercisesFinished === true)
+console.log(`Some of the explorers have exercisesFinished in true:  ${frontFinished}`)
+
+const onBoardingFinished = explorers.every((num) => num.missions.onboarding.isFinished === true)
+console.log(`All of the explorers have isFinished in true:  ${onBoardingFinished}`)
