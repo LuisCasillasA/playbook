@@ -13,3 +13,12 @@ const issue = new Issue('Exercise 1 week2', 'Playbook', 'Finish', 215, ['week2',
 
 console.log('\nTitle and Author: ' + issue.getTitleAndAuthor())
 console.log('General information: ' + issue.getGeneralInfo())
+
+//Instance class PullRequest
+import PullRequest from './pullRequest.js'
+
+const pull = new PullRequest('Change some files', 'LuisCasillasA', 'main', '2022-04-15', 'Approved', 'MyRepo')
+
+console.log('\nPull Request')
+console.log('Status: ' + pull.getStatus())
+console.log('Title and author: ' + pull.getTitleAndAuthor())
