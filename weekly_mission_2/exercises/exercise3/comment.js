@@ -1,7 +1,8 @@
 export default class Comment{
-    constructor(user, dateComment, reactions){
+    constructor(user,comment, dateComment, reactions){
         this.user = user
-        this.dateComment = dateComment
+        this.comment = comment
+        this.dateComment = new Date(dateComment)
         this.reactions = reactions
     }
     getReactions(){
