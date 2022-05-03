@@ -4,7 +4,7 @@ export default class User{
         this.lastName = lastName
         this.age = age
         this.profilePic = profilePic
-        this.birthDate = birthDate
+        this.birthDate = new Date(birthDate)
     }
 
     getGeneralInfo(){
