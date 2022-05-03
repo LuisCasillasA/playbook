@@ -40,3 +40,13 @@ console.log("\nPost")
 console.log(post.getPostInfo())
 console.log(post.getReactions())
 post.getComments()
+
+//Instance Biography class
+import Biography from './biography.js'
+
+const biography = new Biography(userFacebook, [post], {phone: 1234567890, school: 'UAZ', email: 'launchx10359@innovaccion.mx'}, ['Username1', 'Username2'], ['meme.jpg', 'foto2.jpg'], ['Juliana postres', 'Los memes'])
+
+console.log('\nBiography')
+console.log(biography.getInformation())
+console.log('\n')
+console.log(biography.getFriends())
