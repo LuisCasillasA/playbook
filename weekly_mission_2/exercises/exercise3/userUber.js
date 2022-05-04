@@ -8,4 +8,10 @@ export default class UserUber extends User{
     getGeneralInfo(){
         return `${this.profilePic}\n${this.name} ${this.lastName}\n${this.rate}`
     }
+    setCar(car){
+        this.car = car
+    }
+    getCar(){
+        return this.car
+    }
 }
