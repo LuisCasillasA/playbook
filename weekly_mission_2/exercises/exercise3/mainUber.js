@@ -16,3 +16,11 @@ console.log('Passanger\n')
 console.log(userPassanger.getGeneralInfo())
 console.log('\nDriver')
 console.log(userDriver.getGeneralInfo() + userDriver.car.getCarInfo())
+
+//Create Travel
+import Travel from './travel.js'
+
+const travel = new Travel('Zocalo Capitalino', 'Calle San Luis #25 Jerez, Zacatecas', 4680, userPassanger, userDriver)
+
+console.log('\nTravel\n')
+console.log(travel.getTravelInfo())
